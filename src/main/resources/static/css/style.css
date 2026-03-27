@@ -383,3 +383,58 @@ textarea,
 .rounded-circle {
     border-radius: 50% !important;
 }
+
+/*--------------------------------------------------------------
+# Frontend Portal Navigation Cards
+--------------------------------------------------------------*/
+.portal-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.portal-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top right, rgba(255,255,255,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.portal-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2) !important;
+}
+
+.portal-card:hover::before {
+    opacity: 1;
+}
+
+.rounded-custom {
+    border-radius: 25px !important;
+}
+
+/* Curated Gradients for Portals */
+.gradient-farmer {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.gradient-agro {
+    background: linear-gradient(135deg, #FF8008 0%, #FFC837 100%);
+}
+
+.gradient-student {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-admin {
+    background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%);
+}
+
+.gradient-weather {
+    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+}
