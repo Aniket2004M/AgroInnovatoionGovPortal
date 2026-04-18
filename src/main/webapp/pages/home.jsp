@@ -42,11 +42,13 @@
                       </video>
                       
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Organic Vegetables</h3>
-                            <h1 class="display-1 text-white mb-md-4">Organic Vegetables For Healthy Life</h1>
-                            <a href="farmproduct" class="btn btn-primary py-md-3 px-md-5 me-3">Our Products <i class="fa-solid fa-cart-shopping"></i></a>
-                            <a href="farmagroagency" class="btn btn-secondary py-md-3 px-md-5">Agro Agencies <i class="fa-solid fa-building-wheat"></i></a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="text-white fw-bold mb-3" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Organic Vegetables</h3>
+                            <h1 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Organic Vegetables For Healthy Life</h1>
+                            <div class="mt-4">
+                                <a href="farmproduct" class="btn btn-primary btn-lg rounded-pill py-3 px-sm-5 me-sm-3 mb-3 mb-sm-0 shadow-sm">Our Products <i class="fa-solid fa-cart-shopping ms-2"></i></a>
+                                <a href="farmagroagency" class="btn btn-secondary btn-lg rounded-pill py-3 px-sm-5 shadow-sm">Agro Agencies <i class="fa-solid fa-building-wheat ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -56,11 +58,13 @@
                         Your browser does not support HTML5 video.
                       </video>
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Organic Fruits</h3>
-                            <h1 class="display-1 text-white mb-md-4">Organic Fruits For Better Health</h1>
-                              <a href="farmproduct" class="btn btn-primary py-md-3 px-md-5 me-3">Our Products <i class="fa-solid fa-cart-shopping"></i></a>
-                            <a href="farmagroagency" class="btn btn-secondary py-md-3 px-md-5">Agro Agencies <i class="fa-solid fa-building-wheat"></i></a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="text-white fw-bold mb-3" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Organic Fruits</h3>
+                            <h1 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Organic Fruits For Better Health</h1>
+                            <div class="mt-4">
+                                <a href="farmproduct" class="btn btn-primary btn-lg rounded-pill py-3 px-sm-5 me-sm-3 mb-3 mb-sm-0 shadow-sm">Our Products <i class="fa-solid fa-cart-shopping ms-2"></i></a>
+                                <a href="farmagroagency" class="btn btn-secondary btn-lg rounded-pill py-3 px-sm-5 shadow-sm">Agro Agencies <i class="fa-solid fa-building-wheat ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -70,11 +74,13 @@
                         Your browser does not support HTML5 video.
                       </video>
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="text-white">Organic Seeds</h3>
-                            <h1 class="display-1 text-white mb-md-4">Organic Seeds For Better Farming</h1>
-                              <a href="farmproduct" class="btn btn-primary py-md-3 px-md-5 me-3">Our Products <i class="fa-solid fa-cart-shopping"></i></a>
-                            <a href="farmagroagency" class="btn btn-secondary py-md-3 px-md-5">Agro Agencies <i class="fa-solid fa-building-wheat"></i></a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="text-white fw-bold mb-3" style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Organic Seeds</h3>
+                            <h1 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Organic Seeds For Better Farming</h1>
+                            <div class="mt-4">
+                                <a href="farmproduct" class="btn btn-primary btn-lg rounded-pill py-3 px-sm-5 me-sm-3 mb-3 mb-sm-0 shadow-sm">Our Products <i class="fa-solid fa-cart-shopping ms-2"></i></a>
+                                <a href="farmagroagency" class="btn btn-secondary btn-lg rounded-pill py-3 px-sm-5 shadow-sm">Agro Agencies <i class="fa-solid fa-building-wheat ms-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>

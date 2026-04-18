@@ -87,28 +87,24 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-4 text-secondary"><span class="text-white">Homesteader</span></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-               <a href="farm" class="nav-item nav-link "><i class="fa-solid fa-house"></i>&nbsp;Home</a>
-                <a href="about" class="nav-item nav-link "><i class="fa-solid fa-globe"></i>&nbsp;About</a>
-               
-                <a href="register" class="nav-item nav-link active"><i class="fa-solid fa-user-plus"></i>&nbsp;Register</a>
-                
-                <a href="login" class="nav-item nav-link"><i class="fa-solid fa-seedling"></i>&nbsp;Login</a>
-              
-              
-                
-               
+    <div class="container-fluid position-relative z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light glass-nav rounded-custom shadow-sm py-2 px-4 mx-lg-5 mt-lg-4 mb-4">
+            <a href="index.html" class="navbar-brand d-flex d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Homesteader</span></h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto py-0">
+                    <a href="farm" class="nav-item nav-link fw-bold"><i class="fa-solid fa-house text-primary me-1"></i>Home</a>
+                    <a href="about" class="nav-item nav-link fw-bold"><i class="fa-solid fa-globe text-primary me-1"></i>About</a>
+                    <a href="register" class="nav-item nav-link fw-bold active"><i class="fa-solid fa-user-plus text-primary me-1"></i>Register</a>
+                    <a href="login" class="nav-item nav-link fw-bold"><i class="fa-solid fa-seedling text-primary me-1"></i>Login</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Nav Bar End -->
 
      
@@ -119,12 +115,12 @@
                 <h6 class="text-uppercase" style="color: white; ">Hello There</h6>
                 <h1 class="display-5" style="color: white;">Register Your Account</h1>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-7">
-                    <div class="bg-primary h-100 p-5">
+            <div class="row gx-lg-5 justify-content-center">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="glass-card h-100">
                        
                         <c:if test="${not empty error}">
-                            <div class="alert alert-danger" role="alert" style="text-align: center;">
+                            <div class="alert alert-danger shadow-sm rounded-custom" role="alert" style="text-align: center;">
                                 ${error}
                             </div>
                         </c:if>

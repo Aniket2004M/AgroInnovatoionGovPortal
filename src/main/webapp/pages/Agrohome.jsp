@@ -40,28 +40,24 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-4 text-secondary"><span class="text-white">Homesteader</span></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-               
-                <a href="agro"><img src="img/logo.png" alt="" style="margin: 0px;  width: 180px; margin: 10px; margin-right:850px; border-radius: 15px;"></a>
-                <a href="agro" class="nav-item nav-link active">Home</a>
-               
-               
-                <a href="registeragro" class="nav-item nav-link">Register</a>
-                <a href="loginagro" class="nav-item nav-link">Login</a>
-              
-                
-               
+    <div class="container-fluid position-relative z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light glass-nav rounded-custom shadow-sm py-2 px-4 mx-lg-5 mt-lg-4 mb-4">
+            <a href="index.html" class="navbar-brand d-flex d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Homesteader</span></h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav w-100 d-flex align-items-center py-0">
+                    <a href="agro" class="me-auto"><img src="img/logo.png" alt="" style="height: 50px; border-radius: 12px;" class="shadow-sm"></a>
+                    <a href="agro" class="nav-item nav-link fw-bold active"><i class="fa-solid fa-house text-primary me-1"></i>Home</a>
+                    <a href="registeragro" class="nav-item nav-link fw-bold"><i class="fa-solid fa-user-plus text-primary me-1"></i>Register</a>
+                    <a href="loginagro" class="nav-item nav-link fw-bold"><i class="fa-solid fa-seedling text-primary me-1"></i>Login</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Navbar End -->
 
 
@@ -84,48 +80,32 @@
     <div class="container-fluid p-0" style="background-color:black">
         <div class="carousel-inner" >
                 <div class="carousel-item active" >
-                    <img src="https://images.pexels.com/photos/7543111/pexels-photo-7543111.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="w-100" alt="" style="opacity: 0.85;">
-                     
-                        
-                        
-                      
-                      
+                    <img src="https://images.pexels.com/photos/7543111/pexels-photo-7543111.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" class="w-100" alt="" style="opacity: 0.9;">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="display-1 text-white mb-md-4">Welcome</h3>
-                            <p class="text-white" style="font-size: 30px;">HomeSteader is a web-based open discussion portal. </p>
-                         
-                            <a href="registeragro" class="btn btn-secondary py-md-3 px-md-5">Join As AgroAgency</a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Welcome</h3>
+                            <p class="text-white fw-bold mb-4" style="font-size: 24px; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">HomeSteader is a web-based open discussion portal. </p>
+                            <a href="registeragro" class="btn btn-primary btn-lg rounded-pill py-md-3 px-md-5 mt-2 shadow-sm">Join As AgroAgency</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                   <img src="https://images.pexels.com/photos/3158017/pexels-photo-3158017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100" alt="" style="opacity: 0.85;">
-
+                   <img src="https://images.pexels.com/photos/3158017/pexels-photo-3158017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-100" alt="" style="opacity: 0.9;">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="display-1 text-white mb-md-4">Welcome</h3>
-                           
-                            <p class="text-white" style="font-size: 25px;">  Providing information and solutions 
-                                about crops, fertilizers, vegetables, Seeds, Fruits.</p>
-                               
-                                <a href="registeragro" class="btn btn-secondary py-md-3 px-md-5">Join As AgroAgency</a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Welcome</h3>
+                            <p class="text-white fw-bold mb-4" style="font-size: 24px; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Providing information and solutions about crops, fertilizers, vegetables, seeds & fruits.</p>
+                            <a href="registeragro" class="btn btn-primary btn-lg rounded-pill py-md-3 px-md-5 mt-2 shadow-sm">Join As AgroAgency</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                  
-                    <img src="https://images.pexels.com/photos/12626272/pexels-photo-12626272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="w-100" alt="" style="opacity: 0.85;">
-
+                    <img src="https://images.pexels.com/photos/12626272/pexels-photo-12626272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"  class="w-100" alt="" style="opacity: 0.9;">
                     <div class="carousel-caption top-0 bottom-0 start-0 end-0 d-flex flex-column align-items-center justify-content-center">
-                        <div class="text-start p-5" style="max-width: 900px;">
-                            <h3 class="display-1 text-white mb-md-4">Welcome</h3>
-                          
-                                <p class="text-white" style="font-size: 25px;">    Climate to Small farmers and 
-                                    agricultural students.</p>
-                           
-                                   
-                                    <a href="registeragro" class="btn btn-secondary py-md-3 px-md-5">Join As AgroAgency</a>
+                        <div class="glass-card text-center p-5 mx-3" style="max-width: 900px; border:none; border-top: 1px solid rgba(255,255,255,0.4);">
+                            <h3 class="display-3 text-white mb-md-4 fw-bold" style="text-shadow: 0 4px 10px rgba(0,0,0,0.3);">Welcome</h3>
+                            <p class="text-white fw-bold mb-4" style="font-size: 24px; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">Climate insights tailored for Small farmers and agricultural students.</p>
+                            <a href="registeragro" class="btn btn-primary btn-lg rounded-pill py-md-3 px-md-5 mt-2 shadow-sm">Join As AgroAgency</a>
                         </div>
                     </div>
                 </div>

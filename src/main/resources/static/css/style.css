@@ -1,33 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 /********** Template CSS **********/
 :root {
-    --primary: #34AD54;
-    --secondary: #FF9933;
-    --light: #F6FFF2;
-    --dark: #263A4F;
+    --primary: #10b981; /* Deep Emerald */
+    --primary-dark: #047857;
+    --secondary: #f59e0b; /* Amber */
+    --light: #f8fafc;
+    --dark: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --shadow-soft: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
 }
 
 body, html {
-    font-family: 'Anthropic Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    background-color: #f8fafc;
+    color: #334155;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, 
 .display-1:not(i), .display-2:not(i), .display-3:not(i), 
 .display-4:not(i), .display-5:not(i), .display-6:not(i) {
-    font-family: 'anthropicSerif', 'Tiempos Text', 'Crimson Pro', 'Georgia', serif !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--dark);
 }
 
 .btn {
-    font-family: 'Anthropic Sans', 'Inter', -apple-system, sans-serif !important;
-    letter-spacing: 1px;
-    font-weight: 700;
-    transition: .5s;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-primary,
 .btn-secondary {
     color: #FFFFFF;
+    box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.39);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Glassmorphism Utilities */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 0.5rem 2rem !important;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border-radius: 24px;
+    padding: 2.5rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px 0 rgba(31, 38, 135, 0.1);
 }
 
 .btn-square {
@@ -436,5 +478,25 @@ textarea,
 }
 
 .gradient-weather {
-    background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+    background: linear-gradient(135deg, #0cebeb 0%, #20e3b2 50%, #29ffc6 100%);
+}
+
+/*--------------------------------------------------------------
+# Modern Form Inputs & Selects
+--------------------------------------------------------------*/
+.form-control, .form-select {
+    background-color: #f8fafc !important;
+    border: 2px solid #e2e8f0 !important;
+    padding: 0.8rem 1.2rem !important;
+    font-size: 1rem;
+    color: var(--dark) !important;
+    box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #ffffff !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15) !important;
+    outline: none 0;
 }

@@ -114,24 +114,16 @@
                 <h6 class=" text-uppercase" style="color: white;">Welcome Back</h6>
                 <h1 class="display-5" style="color: white;"> Login Your Account</h1>
             </div>
-            <div class="row g-0">
-                <div class="col-lg-7">
-                    <div class="bg-primary h-100 p-5">
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Login Form</title>
-                        </head>
-                        <body>
+            <div class="row gx-lg-5">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="glass-card h-100">
                         <c:if test="${not empty error}">
-                            <div class="alert alert-danger" role="alert" style="text-align: center;">
+                            <div class="alert alert-danger shadow-sm rounded-custom" role="alert" style="text-align: center;">
                                 ${error}
                             </div>
                         </c:if>
                         <c:if test="${not empty success}">
-                            <div class="alert alert-success" role="alert" style="text-align: center;">
+                            <div class="alert alert-success shadow-sm rounded-custom" role="alert" style="text-align: center;">
                                 ${success}
                             </div>
                         </c:if>
@@ -219,40 +211,38 @@
                                 return true;
                             }
                         </script>
-                        
-                        </body>
-                        </html>
+                        </script>
                         
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="bg-secondary h-100 p-5">
-                        <h2 class="text-white mb-4">Get In Touch</h2>
-                        <div class="d-flex mb-4">
-                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                <i class="bi bi-geo-alt fs-4 text-white"></i>
+                    <div class="glass-card h-100 d-flex flex-column justify-content-center gradient-farmer text-white" style="border: none;">
+                        <h2 class="text-white mb-5 fw-bold"><i class="fa-solid fa-headset me-3"></i>Get In Touch</h2>
+                        <div class="d-flex mb-4 align-items-center">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 60px; height: 60px; min-width: 60px;">
+                                <i class="bi bi-geo-alt fs-4 text-success"></i>
                             </div>
-                            <div class="ps-3">
-                                <h5 class="text-white">Our Office</h5>
-                                <span class="text-white">Pune,Maharashtra</span>
+                            <div class="ps-4">
+                                <h5 class="text-white mb-1">Our Office</h5>
+                                <span class="text-white-50 fw-bold">Pune, Maharashtra</span>
+                            </div>
+                            </div>
+                        <div class="d-flex mb-4 align-items-center">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 60px; height: 60px; min-width: 60px;">
+                                <i class="bi bi-envelope-open fs-4 text-success"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h5 class="text-white mb-1">Email Us</h5>
+                                <span class="text-white-50 fw-bold">gauravpatilgr13@gmail.com</span>
                             </div>
                         </div>
-                        <div class="d-flex mb-4">
-                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                <i class="bi bi-envelope-open fs-4 text-white"></i>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-white rounded-circle d-flex align-items-center justify-content-center shadow-sm" style="width: 60px; height: 60px; min-width: 60px;">
+                                <i class="bi bi-phone-vibrate fs-4 text-success"></i>
                             </div>
-                            <div class="ps-3">
-                                <h5 class="text-white">Email Us</h5>
-                                <span class="text-white">gauravpatilgr13@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                                <i class="bi bi-phone-vibrate fs-4 text-white"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h5 class="text-white">Call Us</h5>
-                                <span class="text-white">+91 9552031594</span>
+                            <div class="ps-4">
+                                <h5 class="text-white mb-1">Call Us</h5>
+                                <span class="text-white-50 fw-bold">+91 9552031594</span>
                             </div>
                         </div>
                     </div>
