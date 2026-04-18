@@ -34,57 +34,32 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid px-5 d-none d-lg-block top_bar">
-        <div class="row gx-5 py-3 align-items-center">
-            <div class="col-lg-3" style="color: darkslategrey;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',">
-                <div class="d-flex align-items-center justify-content-start">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-2"></i>
-                    <h2 class="mb-0">+91 9552031594</h2>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="d-flex align-items-center justify-content-center">
-                    <a href="index.html" class="navbar-brand ms-lg-5">
-                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Homesteader</span></h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3">
-               <div class="d-flex align-items-center justify-content-end">
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://twitter.com/GauravPatilGR"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.facebook.com/GauravpatilGR/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle me-2" href="https://www.linkedin.com/in/gaurav-patil-038860269/"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-primary btn-square rounded-circle" href="https://www.instagram.com/gauravpatil_13/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
-
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-4 text-secondary"><span class="text-white">Homesteader</span></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-                <a href="farm" class="nav-item nav-link "><i class="fa-solid fa-house"></i>&nbsp;Home</a>
-                <a href="about" class="nav-item nav-link active"><i class="fa-solid fa-globe"></i>&nbsp;About</a>
-               
-                <a href="register" class="nav-item nav-link"><i class="fa-solid fa-user-plus"></i>&nbsp;Register</a>
-                
-                <a href="login" class="nav-item nav-link"><i class="fa-solid fa-seedling"></i>&nbsp;Login</a>
-              
-                
-               
+    <div class="container-fluid position-relative z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light glass-nav rounded-custom shadow-sm py-2 px-4 mx-lg-5 mt-lg-4 mb-4">
+            <a href="farm" class="navbar-brand d-flex d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Homesteader</span></h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav w-100 d-flex align-items-center py-0 justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <a href="farm" class="me-auto" style="margin-right: 15px;"><img src="img/logo.png" alt="" style="height: 50px; border-radius: 12px;" class="shadow-sm"></a>
+                        <a href="farm" class="nav-item nav-link fw-bold"><i class="fa-solid fa-house text-primary me-1"></i>Home</a>
+                        <a href="about" class="nav-item nav-link fw-bold active"><i class="fa-solid fa-globe text-primary me-1"></i>About</a>
+                        <a href="register" class="nav-item nav-link fw-bold"><i class="fa-solid fa-user-plus text-primary me-1"></i>Register</a>
+                        <a href="login" class="nav-item nav-link fw-bold"><i class="fa-solid fa-seedling text-primary me-1"></i>Login</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="stutrain" class="nav-item nav-link fw-bold text-success"><i class="fa-solid fa-graduation-cap me-1"></i>Agro Student</a>
+                        <a href="agro" class="nav-item nav-link fw-bold text-success"><i class="fa-solid fa-building-wheat me-1"></i>AgroAgency Corner</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Navbar End -->
 
 

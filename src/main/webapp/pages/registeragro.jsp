@@ -40,28 +40,24 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex d-lg-none">
-            <h1 class="m-0 display-4 text-secondary"><span class="text-white">Homesteader</span></h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto py-0">
-               
-                <a href="agro"><img src="img/logo.png" alt="" style="margin: 0px;  width: 180px; margin: 10px; margin-right:850px; border-radius: 15px;"></a>
-                <a href="agro" class="nav-item nav-link ">Home</a>
-               
-               
-                <a href="registeragro" class="nav-item nav-link active">Register</a>
-                <a href="loginagro" class="nav-item nav-link"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
-              
-                
-               
+    <div class="container-fluid position-relative z-index-1">
+        <nav class="navbar navbar-expand-lg navbar-light glass-nav rounded-custom shadow-sm py-2 px-4 mx-lg-5 mt-lg-4 mb-4">
+            <a href="agro" class="navbar-brand d-flex d-lg-none">
+                <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Homesteader</span></h1>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav w-100 d-flex align-items-center py-0">
+                    <a href="agro" class="me-auto"><img src="img/logo.png" alt="" style="height: 50px; border-radius: 12px;" class="shadow-sm"></a>
+                    <a href="agro" class="nav-item nav-link fw-bold"><i class="fa-solid fa-house text-primary me-1"></i>Home</a>
+                    <a href="registeragro" class="nav-item nav-link fw-bold active"><i class="fa-solid fa-user-plus text-primary me-1"></i>Register</a>
+                    <a href="loginagro" class="nav-item nav-link fw-bold"><i class="fa-solid fa-seedling text-primary me-1"></i>Login</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Navbar End -->
     
     <!-- Registration form start -->

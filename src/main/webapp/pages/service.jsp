@@ -82,11 +82,13 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-6" >
+                    <a href="stutrain">
                     <div class="service-item bg-light text-center p-5" style="border-radius: 32px;">
                       <i  class="fa-solid fa-graduation-cap display-1 text-primary mb-3"></i>
                         <h4>Agro Student Training</h4>
                         <p class="mb-0"> At  Homesteader Agro Student Training provides a distinctive platform for you to share your agricultural knowledge, offer specialized courses, and connect directly with aspiring agri-entrepreneurs and students. </p>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>
