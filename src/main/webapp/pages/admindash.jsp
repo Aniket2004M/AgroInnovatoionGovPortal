@@ -6,288 +6,228 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport"
-	content="width=device-width, 
-				initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin Dashboard</title>
 <link rel="stylesheet" href="css/styleadmin.css">
-<link rel="css/stylesheet" href="responsive.css">
-<script src="https://kit.fontawesome.com/afcf20c6bc.js"
-	crossorigin="anonymous"></script>
-<link rel="shortcut icon" href="img/favicon-32x32.png"
-	type="image/x-icon">
+<script src="https://kit.fontawesome.com/afcf20c6bc.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <div class="logosec">
+            <button class="menu-toggle menuicn" id="menuicn" type="button" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="logo">
+                <span class="logo-mark"><i class="fa-brands fa-pagelines"></i></span>
+                <div>
+                    <strong>Homesteader</strong>
+                    <small>Admin Workspace</small>
+                </div>
+            </div>
+        </div>
 
-	<!-- for header part -->
-	<header>
+        <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search contacts by name, email, subject, or message" id="districtSearch"
+                onkeyup="search()">
+        </div>
 
-		<div class="logosec">
-			<div class="logo">
-				Homesteader<i class="fa-brands fa-pagelines"></i>
-			</div>
-			<img
-				src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
-				class="icn menuicn" id="menuicn" alt="menu-icon">
-		</div>
+        <div class="header-profile">
+            <div class="header-copy">
+                <span class="eyebrow">Control Center</span>
+                <h3>Welcome, Admin</h3>
+            </div>
+            <div class="dp">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+        </div>
+    </header>
 
-		<div class="searchbar">
-			<input type="text" placeholder="Search by Email" id="districtSearch"
-				onkeyup="search()">
-			<div class="searchbtn">
-				<i class="fa-solid fa-magnifying-glass"></i>
-			</div>
-		</div>
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <a href="admindash" class="nav-option option1">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="adminagro" class="nav-option">
+                        <i class="fa-solid fa-building-circle-arrow-right"></i>
+                        <span>AgroAgency Request</span>
+                    </a>
+                    <a href="addproductadmin" class="nav-option">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Product</span>
+                    </a>
+                    <a href="editproductadmin" class="nav-option">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>View and Edit Product</span>
+                    </a>
+                    <a href="farmreport" class="nav-option">
+                        <i class="fa-solid fa-laptop-file"></i>
+                        <span>Farmer Report</span>
+                    </a>
+                    <a href="soilreportadmin" class="nav-option">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span>Soil Analysis</span>
+                    </a>
+                    <a href="agropage" class="nav-option">
+                        <i class="fa-solid fa-building-wheat"></i>
+                        <span>AgroAgency</span>
+                    </a>
+                    <a href="totalfarmeradmin" class="nav-option">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Farmers</span>
+                    </a>
+                    <a href="adminstudentrequest" class="nav-option">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Student Training</span>
+                    </a>
+                    <a href="adminfarmerrequest" class="nav-option">
+                        <i class="fa-solid fa-tractor"></i>
+                        <span>Farmer Training</span>
+                    </a>
+                    <a href="blog" class="nav-option">
+                        <i class="fa-brands fa-blogger-b"></i>
+                        <span>Blog</span>
+                    </a>
+                    <a href="logoutadmin" class="nav-option logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
 
-		<div style="margin-left: 600px;">
-			<h3>Welcome Admin</h3>
-		</div>
-		<div class="dp">
+        <div class="main">
+            <section class="hero-panel">
+                <div class="hero-content">
+                    <span class="hero-label">Daily Overview</span>
+                    <h1>Run the Homesteader admin desk with more clarity.</h1>
+                    <p>
+                        Monitor farmer activity, handle incoming requests, and jump into the most common
+                        admin tasks from a cleaner dashboard.
+                    </p>
+                </div>
+                <div class="hero-highlight">
+                    <div class="hero-stat">
+                        <span class="hero-stat-label">Total Farmers</span>
+                        <strong>${totalFarmers}</strong>
+                        <small>Live count available on your admin dashboard.</small>
+                    </div>
+                </div>
+            </section>
 
-			<img
-				src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
-				class="dpicn" alt="dp">
+            <section class="box-container">
+                <div class="box box-primary">
+                    <div class="text">
+                        <span class="topic">Farmer Network</span>
+                        <h2 class="topic-heading">${totalFarmers}</h2>
+                        <p>Registered farmers currently available in the platform.</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                </div>
 
-		</div>
+                <a href="registersubadmin" class="box box-accent">
+                    <div class="text">
+                        <span class="topic">Team Access</span>
+                        <h2 class="topic-heading">Register Sub Admin</h2>
+                        <p>Add support admins so operations can be managed faster.</p>
+                    </div>
+                    <div class="box-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </a>
+            </section>
 
+            <section class="quick-links">
+                <a href="adminagro" class="quick-link-card">
+                    <i class="fa-solid fa-building-circle-arrow-right"></i>
+                    <div>
+                        <h3>Review Agro Requests</h3>
+                        <p>Approve or reject pending agro agency submissions.</p>
+                    </div>
+                </a>
+                <a href="editproductadmin" class="quick-link-card">
+                    <i class="fa-solid fa-box-open"></i>
+                    <div>
+                        <h3>Manage Products</h3>
+                        <p>Update product details and keep the catalog current.</p>
+                    </div>
+                </a>
+                <a href="blog" class="quick-link-card">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <div>
+                        <h3>Publish Content</h3>
+                        <p>Upload blogs and communicate new updates to your audience.</p>
+                    </div>
+                </a>
+            </section>
 
-		</div>
+            <section class="report-container">
+                <div class="report-header">
+                    <div>
+                        <span class="section-kicker">Inbox</span>
+                        <h2 class="recent-Articles">Recent Contact Requests</h2>
+                    </div>
+                    <div class="report-meta">
+                        <i class="fa-regular fa-address-card"></i>
+                        <span>Search updates instantly from the top bar</span>
+                    </div>
+                </div>
 
-	</header>
+                <div class="table-container">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Farmer Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach items="${kk}" var="e">
+                                <tr>
+                                    <td>${e.name}</td>
+                                    <td>${e.email}</td>
+                                    <td>${e.subject}</td>
+                                    <td>${e.message}</td>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
 
-	<div class="main-container">
-		<div class="navcontainer">
-			<nav class="nav">
-				<div class="nav-upper-options">
-					<a href="admindash">
-						<div class="nav-option option1">
-							<i class="fa-solid fa-table-columns"></i>
-							<h3>Dashboard</h3>
-						</div>
-					</a> <a href="adminagro">
-						<div class="option nav-option">
-							<i class="fa-solid fa-building-circle-arrow-right"></i>
-							<h3>AgroAgency Request</h3>
-						</div>
-					</a> <a href="addproductadmin">
-						<div class="nav-option option4">
-							<i class="fa-solid fa-plus"></i>
-							<h3>Add Product</h3>
-						</div>
-					</a> <a href="editproductadmin">
-						<div class="nav-option option4">
-							<i class="fa-solid fa-pen-to-square"></i>
-							<h3>View & Edit Product</h3>
-						</div>
-					</a> <a href="farmreport">
-						<div class="nav-option option3">
-							<i class="fa-solid fa-laptop-file"></i>
-							<h3>Farmer Report</h3>
-						</div>
-					</a> <a href="soilreportadmin">
-						<div class="nav-option option6">
-							<i class="fa-solid fa-chart-pie"></i>
-							<h3>Soil Analysis</h3>
-						</div>
-					</a> <a href="agropage">
-						<div class="option nav-option">
-							<i class="fa-solid fa-building-wheat"></i>
-							<h3>AgroAgency</h3>
-						</div>
-					</a> <a href="totalfarmeradmin">
-						<div class="nav-option option3">
-							<i class="fa-solid fa-circle-user"></i>
-							<h3>Farmers</h3>
-						</div>
-					</a> <a href="adminstudentrequest">
-						<div class="nav-option logout">
-							<i class="fa-solid fa-graduation-cap"></i>
-							<h3>Student Training</h3>
-						</div>
-					</a> <a href="adminfarmerrequest">
-						<div class="nav-option logout">
-							<i class="fa-solid fa-tractor"></i>
-							<h3>Farmer Training</h3>
-						</div>
-					</a> <a href="blog">
-						<div class="nav-option logout">
-							<i class="fa-brands fa-blogger-b"></i>
-							<h3>Blog</h3>
-						</div>
-					</a> <a href="logoutadmin">
-						<div class="nav-option logout">
-							<i class="fa-solid fa-arrow-right-from-bracket"></i>
-							<h3>Logout</h3>
-						</div>
-					</a>
+    <script>
+    function search() {
+        let filter = document.getElementById("districtSearch").value.toUpperCase();
+        let table = document.getElementById("table");
+        let tr = table.getElementsByTagName("tr");
 
-				</div>
-			</nav>
-		</div>
-
-
-
-
-
-
-		<div class="main">
-
-			<div class="searchbar2">
-				<input type="text" name="" id="" placeholder="Search">
-				<div class="searchbtn">
-					<img
-						src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
-						class="icn srchicn" alt="search-button">
-				</div>
-			</div>
-			<div class="box-container">
-
-				<div class="box box1">
-					<div class="text">
-						<h2 class="topic-heading">
-							${totalFarmers}
-						</h2>
-						<h2 class="topic">Total Farmers</h2>
-					</div>
-
-					<i class="fa-solid fa-people-group"></i>
-				</div>
-
-
-				<a href="registersubadmin">
-					<div class="box box4" style="background-color: #fb8500;">
-						<div class="text">
-
-							<h2 class="">
-								Register Sub Admin <i class="fa-solid fa-user-tie"></i>
-							</h2>
-						</div>
-
-
-					</div>
-				</a>
-
-				<div class="report-container">
-					<div class="report-header">
-						<h1 class="recent-Articles">
-							Contact Request <i class="fa-regular fa-address-card"></i>
-						</h1>
-
-					</div>
-
-					<div class="table-container">
-						<table id="table">
-							<thead>
-								<tr>
-
-									<th>Farmer Name</th>
-									<th>Email</th>
-									<th>Subject</th>
-									<th>Message</th>
-
-								</tr>
-							</thead>
-							<tbody>
-								<c:forEach items="${kk}" var="e">
-									<tr>
-
-										<td>${e.name}</td>
-										<td>${e.email}</td>
-										<td>${e.subject}</td>
-										<td>${e.message}</td>
-
-									</tr>
-								</c:forEach>
-							</tbody>
-						</table>
-
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Code for Search In Javascript -->
-	<script>
-    
-    function search(){
-        let filter=document.getElementById('districtSearch').value.toUpperCase();
-
-        let table=document.getElementById('table');
-
-        let tr=table.getElementsByTagName('tr');
-
-        for(var i=0;i<tr.length;i++)
-        {
-            let td=tr[i].getElementsByTagName('td')[2];
-
-            if(td)
-            {
-               let textcheck=td.textContent || td.innerHTML;
-
-               if(textcheck.toUpperCase().indexOf(filter)>-1)
-               {
-                   tr[i].style.display="";
-               } else{
-                    tr[i].style.display="none";
-               }
-
-
+        for (let i = 1; i < tr.length; i++) {
+            let textcheck = tr[i].textContent || tr[i].innerText;
+            if (textcheck.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
             }
         }
+    }
 
+    let menuicn = document.querySelector(".menuicn");
+    let nav = document.querySelector(".navcontainer");
 
-         }
-    
-</script>
-	<!-- Code for Search In Javascript -->
-	<style>
-.table-container {
-	margin-right: 30px;
-	width: 100%; /* Adjust the width as needed */
-}
-
-table {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-th, td {
-	padding: 12px;
-	text-align: middle;
-	border-bottom: 1px solid #ddd;
-}
-
-th {
-	color: black;
-}
-
-td {
-	color: black;
-}
-
-a {
-	text-decoration: none;
-	padding: 10px;
-	display: flex;
-	text-align: center;
-	align-items: center;
-	border-radius: 12px;
-	color: white;
-	font-family: "Poppins", sans-serif;
-}
-</style>
-
-	<script src="./index.js"></script>
-
-	<script>let menuicn = document.querySelector(".menuicn"); 
-        let nav = document.querySelector(".navcontainer"); 
-        
-        menuicn.addEventListener("click", () => { 
-            nav.classList.toggle("navclose"); 
-        })
-        </script>
+    menuicn.addEventListener("click", () => {
+        nav.classList.toggle("navclose");
+    });
+    </script>
 </body>
 </html>

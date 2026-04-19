@@ -40,16 +40,6 @@
 				<i class="fa-solid fa-magnifying-glass"></i>
 			</div> 
 		</div> 
-		<label style="margin-left:20px; font-size:15px" ><i class="fa-regular fa-calendar"></i>&nbsp;Filter Daily,Weekly,Monthly</label>
-		 <form action="reportsoil" method="get">
-        <label for="startdate">Start Date:</label>
-        <input type="date" id="startDate" name="startdate" required>
-
-        <label for="enddate">End Date:</label>
-        <input type="date" id="endDate" name="enddate" required>
-
-        <button type="submit" class="demo">Generate Report<i class="fa-solid fa-wheat-awn-circle-exclamation"></i></button>
-       </form>
    
 
         <div style="margin-left:600px;"> <h3>Welcome Admin</h3></div>
@@ -159,6 +149,24 @@
 	
 		<div class="main"> 
 
+		   <section class="report-filter-panel">
+		   		<div class="report-filter-copy">
+		   			<span class="report-filter-kicker">Report Filters</span>
+		   			<p><i class="fa-regular fa-calendar"></i>&nbsp;Filter Daily,Weekly,Monthly</p>
+		   		</div>
+		   		<form action="reportsoil" method="get" class="report-filter-form">
+	        		<div class="date-field">
+	        			<label for="startDate">Start Date</label>
+	        			<input type="date" id="startDate" name="startdate" required>
+	        		</div>
+	        		<div class="date-field">
+	        			<label for="endDate">End Date</label>
+	        			<input type="date" id="endDate" name="enddate" required>
+	        		</div>
+	        		<button type="submit" class="demo report-generate-btn">Generate Report <i class="fa-solid fa-wheat-awn-circle-exclamation"></i></button>
+	       		</form>
+		   </section>
+
 		   <div class="report-container"  style=width:2500px;> 
 				<div class="report-header"> 
 					<h1 class="recent-Articles" style="color:#6f4518;">Soil Analysis Request reports  &nbsp; <i class="fa-solid fa-chart-pie"></i></h1> 
@@ -260,24 +268,78 @@
 	
 
 
-form {
+.report-filter-panel {
+    margin-bottom: 22px;
+    padding: 18px 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(25, 41, 30, 0.08);
+    box-shadow: 0 16px 40px rgba(24, 38, 27, 0.10);
 }
 
-label {
-    margin-left: 15px;
+.report-filter-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.report-filter-kicker {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1f6f43;
+}
+
+.report-filter-copy p {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #4c5d4e;
     font-size: 14px;
-    color: #333;
-     
+    font-weight: 700;
 }
 
-input[type="date"] {
-    padding: 9px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color:orange;
+.report-filter-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.date-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.date-field label {
+    margin-left: 0;
+    font-size: 12px;
+    font-weight: 800;
+    color: #2e4331;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.date-field input[type="date"] {
+    min-width: 150px;
+    padding: 10px 12px;
+    border: 1px solid rgba(25, 41, 30, 0.14);
+    border-radius: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: orange;
+}
+
+.report-generate-btn {
+    min-height: 42px;
+    white-space: nowrap;
 }
  .download-button {
     display: inline-block;
@@ -367,6 +429,18 @@ input[type="date"] {
       color:#fff;
       font-family: "Poppins", sans-serif;
       border:3px solid #fff;
+    }
+
+    @media (max-width: 900px) {
+        .report-filter-form {
+            width: 100%;
+        }
+
+        .date-field,
+        .date-field input[type="date"],
+        .report-generate-btn {
+            width: 100%;
+        }
     }
     
 

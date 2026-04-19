@@ -337,7 +337,9 @@
       align-items: center;
       background-color:#8ecae6;
       border-radius: 12px;
-      color: blue;
+      color: #5b1220;
+      font-weight: 700;
+      border: 1px solid rgba(91, 18, 32, 0.18);
       font-family: "Poppins", sans-serif;
     }
 
