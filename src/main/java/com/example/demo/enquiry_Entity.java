@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import java.sql.Date;
 import java.time.LocalDate;
 
@@ -13,32 +12,29 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class enquiry_Entity {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-    int id;
-	
+	int id;
+
 	private String fproduct;
-	
+
 	private String ftype;
-	
-    private String fname;
-	
+
+	private String fname;
+
 	private String fnumber;
-	
-	
 
 	private String femail;
-	
+
 	private String fstate;
-	
+
 	private String fcity;
-	
+
 	private String fmessage;
-	
+
 	private String fprice;
-	
-	
+
 	public String getFemail() {
 		return femail;
 	}
@@ -46,7 +42,7 @@ public class enquiry_Entity {
 	public void setFemail(String femail) {
 		this.femail = femail;
 	}
-	
+
 	public String getFprice() {
 		return fprice;
 	}
@@ -56,8 +52,6 @@ public class enquiry_Entity {
 	}
 
 	private Date dateout;
-
-
 
 	public Date getDateout() {
 		return dateout;
@@ -131,13 +125,4 @@ public class enquiry_Entity {
 		this.fmessage = fmessage;
 	}
 
-	
-    
-
-	
-
-	
-
-	
-	
 }
