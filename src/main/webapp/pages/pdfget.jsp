@@ -551,13 +551,13 @@ footer a:first-child{
 <!-- The footer contains the company's website and address. To align the address details we will use flexbox in the CSS style. -->
 <footer>
     <a href="https://companywebsite.com">
-      gauravpatilgr13@gmail.com
+      aniketmalve@gmail.com
     </a>
     <a href="mailto:company@website.com">
       HomeSteader.Com
     </a>
     <span>
-      9552031594
+      9552031593
     </span>
    
 </footer>
@@ -619,7 +619,7 @@ footer a:first-child{
   <hr />
   <div>
     <div>
-      <b>All Rights Reseved By HomeSteader ©</b>
+      <b>All Rights Reseved By HomeSteader ï¿½</b>
       <p>
         
       </p>

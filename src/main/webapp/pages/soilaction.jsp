@@ -65,7 +65,7 @@
                     <div class="card-body text-center">
                         <h2 class="card-title">Need Help?</h2>
                         <p class="card-text">If you have any questions or concerns, please contact our support team at<br>
-                            gauravpatilgr13@gmail.com</p>
+                            aniketmalve@gmail.com</p>
                     </div>
                 </div>
             </div>

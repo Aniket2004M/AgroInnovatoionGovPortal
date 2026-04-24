@@ -30,7 +30,7 @@
     
    
     <marquee value="5">
-    <h1 class="title" style="font-size: 15px; color:red;   border: none; ">Agriculture Training Programs For Farmers Organized By Homesteader.Com &nbsp; &nbsp; *Contact Helplineno for Any query 9552031594.</h1>
+    <h1 class="title" style="font-size: 15px; color:red;   border: none; ">Agriculture Training Programs For Farmers Organized By Homesteader.Com &nbsp; &nbsp; *Contact Helplineno for Any query 9552031593.</h1>
     
 </marquee>
 		<div id="content-wrapper">

@@ -115,7 +115,7 @@
                     <div class="card-body text-center">
                         <h2 class="card-title">Need Help?</h2>
                         <p class="card-text">If you have any questions or concerns, please contact our support team at<br>
-                            gauravpatilgr13@gmail.com</p>
+                            aniketmalve@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -138,11 +138,11 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-white me-2"></i>
-                                <p class="text-white mb-0">gauravpatilgr13@gmail.com</p>
+                                <p class="text-white mb-0">aniketmalve@gmail.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-white me-2"></i>
-                                <p class="text-white mb-0">9552031594</p>
+                                <p class="text-white mb-0">9552031593</p>
                             </div>
                             <div class="d-flex mt-4">
                                 <a class="btn btn-secondary btn-square rounded-circle me-2" href="https://twitter.com/GauravPatilGR"><i class="fab fa-twitter"></i></a>
