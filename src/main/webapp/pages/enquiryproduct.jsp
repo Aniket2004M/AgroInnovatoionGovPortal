@@ -93,9 +93,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-end">
-                               <a href="">
                                 <button type="submit" class="btn-block btn-primary temp" style="margin-top: 20px;">Send Enquiry</button>
-                           </a>
                            
                               <a href="farmproduct">
                                 <button type="button" class="btn-block btn-danger temp" style="margin-top: 20px;">Cancel</button>
@@ -194,18 +192,12 @@
  <script>
  
  function validateForm() {
-     var fname = document.getElementById("fname").value;
-     var lname = document.getElementById("lname").value;
-     var email = document.getElementById("email").value;
-     var mob = document.getElementById("mob").value;
      var ans = document.getElementById("ans").value;
 
-     if (fname == "" || lname == "" || email == "" || mob == "" || ans == "") {
-         alert("All fields are required!");
+     if (ans.trim() == "") {
+         alert("Please enter a message!");
          return false;
      }
-
-     // Additional validation logic can be added here
 
      return true;
  }

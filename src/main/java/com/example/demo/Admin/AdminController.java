@@ -181,6 +181,19 @@ public class AdminController {
 		b1.write(bt1);
 		b1.close();
 
+		try {
+			String targetPath1 = "C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\target\\classes\\static\\product";
+			java.io.File targetDir = new java.io.File(targetPath1);
+			if (!targetDir.exists()) {
+				targetDir.mkdirs();
+			}
+			BufferedOutputStream b2 = new BufferedOutputStream(new FileOutputStream(targetPath1 + "/" + f1));
+			b2.write(bt1);
+			b2.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 		c2.setPfilen(f1);
 
 		sa.addnewproduct(c2);
@@ -226,6 +239,19 @@ public class AdminController {
 
 		b1.write(bt1);
 		b1.close();
+
+		try {
+			String targetPath1 = "C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\target\\classes\\static\\product";
+			java.io.File targetDir = new java.io.File(targetPath1);
+			if (!targetDir.exists()) {
+				targetDir.mkdirs();
+			}
+			BufferedOutputStream b2 = new BufferedOutputStream(new FileOutputStream(targetPath1 + "/" + f1));
+			b2.write(bt1);
+			b2.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		c3.setPfilen(f1);
 

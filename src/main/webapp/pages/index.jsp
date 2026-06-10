@@ -402,7 +402,7 @@
                            <form action="productsearch" method="post">
                           
                            <input type="hidden" value="${e.pname}" name="name">
-                             <button type="button"  class="btn bg-primary py-2 px-3" style="color:#fff;"> Enquiry<i class="fa-solid fa-cart-shopping"></i></button>
+                             <button type="submit"  class="btn bg-primary py-2 px-3" style="color:#fff;"> Enquiry<i class="fa-solid fa-cart-shopping"></i></button>
                           </form>
                           
                         </div>
