@@ -116,10 +116,6 @@ Install Project Into Your Device
 
 
 
-![App Screenshot](https://github.com/GauravPatilGR/HOMESTEADER-Spring-Boot-Java-Project/assets/123281827/5f2096f4-7631-47ec-8272-2d04a9e14bd7)
-
-
-
 
 
 
@@ -148,9 +144,3 @@ Install Project Into Your Device
 
 
 
-
-
-
-
-## YoutubeOverview
-[![Video](https://img.youtube.com/vi/JlvKlv1fBp0/maxresdefault.jpg)](https://www.youtube.com/watch?v=JlvKlv1fBp0)
