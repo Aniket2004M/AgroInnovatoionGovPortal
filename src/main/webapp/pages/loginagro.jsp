@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,6 +72,11 @@
       
       <div class="main-agileinfo">
         <div class="agileits-top">
+          <c:if test="${not empty error}">
+              <div class="alert alert-danger" role="alert" style="text-align: center; color: #721c24; background-color: #f8d7da; border-color: #f5c6cb; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                  ${error}
+              </div>
+          </c:if>
           <form action="agrologin" method="post">
             
             <input class="text email" type="email" name="email" placeholder="Enter register email" required="">

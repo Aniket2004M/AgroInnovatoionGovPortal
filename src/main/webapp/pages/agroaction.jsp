@@ -139,7 +139,8 @@
             <input type="text" name="name" value="${e.name}" id="agencyName" required readonly>
             
              <input class="text email" type="hidden" name="email" value="${e.email}" required="">
-            <input class="hidden" type="hidden" name="password"value="${e.password}" required="">
+            <input class="hidden" type="hidden" name="password" value="${e.password}" required="">
+            <input type="hidden" name="document" value="${e.document}">
             
               <input class="hidden" type="hidden" name="address" value="${e.address}" required="">
             
@@ -149,8 +150,8 @@
             
             <input class="text w3lpass" type="hidden" name="town" value="${e.town}"  required="">
             
-            <label for="file" style="color: red; font-size: 13px;">*Upload Agroagency Certificate</label>
-            <input class="text w3lpass" type="file" name="file" value="${e.document}"  required="">
+            <label for="file" style="color: red; font-size: 13px;">Upload Agroagency Certificate (Optional)</label>
+            <input class="text w3lpass" type="file" name="file">
             <div class="wthree-text">
             
              

@@ -128,24 +128,36 @@ public class AdminController {
 
 	// Mapping for Update Status of Agro
 	@PostMapping("/submitagro")
-	public String approveagro(@ModelAttribute("c2") agroEntity c2, @RequestParam("file") MultipartFile filename)
+	public String approveagro(@ModelAttribute("c2") agroEntity c2, @RequestParam(value = "file", required = false) MultipartFile filename)
 			throws IOException {
 
-		String f = filename.getOriginalFilename();
+		if (filename != null && !filename.isEmpty()) {
+			String f = filename.getOriginalFilename();
 
-		String path = ("C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\src\\main\\resources\\static\\certificate");
+			String path = ("C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\src\\main\\resources\\static\\certificate");
 
-		// String
-		// path=("FF\\CravitaProject_HomeSteader\\src\\main\\resources\\static\\certificate");
+			BufferedOutputStream b = new BufferedOutputStream(new FileOutputStream(path + "/" + f));
 
-		BufferedOutputStream b = new BufferedOutputStream(new FileOutputStream(path + "/" + f));
+			byte[] bt = filename.getBytes();
 
-		byte[] bt = filename.getBytes();
+			b.write(bt);
+			b.close();
 
-		b.write(bt);
-		b.close();
+			try {
+				String targetPath1 = "C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\target\\classes\\static\\certificate";
+				java.io.File targetDir = new java.io.File(targetPath1);
+				if (!targetDir.exists()) {
+					targetDir.mkdirs();
+				}
+				BufferedOutputStream b2 = new BufferedOutputStream(new FileOutputStream(targetPath1 + "/" + f));
+				b2.write(bt);
+				b2.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 
-		c2.setDocument(f);
+			c2.setDocument(f);
+		}
 
 		agroEntity s = new agroEntity();
 		s.setId(c2.getId());
@@ -356,6 +368,19 @@ public class AdminController {
 
 				b1.write(bt1);
 				b1.close();
+
+				try {
+					String targetPath1 = "C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\target\\classes\\static\\blogimg";
+					java.io.File targetDir = new java.io.File(targetPath1);
+					if (!targetDir.exists()) {
+						targetDir.mkdirs();
+					}
+					BufferedOutputStream b2 = new BufferedOutputStream(new FileOutputStream(targetPath1 + "/" + f1));
+					b2.write(bt1);
+					b2.close();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 
 				c4.setBlogimg(f1);
 			} else {

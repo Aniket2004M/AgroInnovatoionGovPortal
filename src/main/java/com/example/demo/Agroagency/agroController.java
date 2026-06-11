@@ -93,13 +93,18 @@ public class agroController {
 			b.write(filename.getBytes());
 		}
 
-		// BufferedOutputStream b = new BufferedOutputStream(new FileOutputStream(path +
-		// "/" + f));
-
-//		byte bt[] = filename.getBytes();
-//
-//		b.write(bt);
-//		b.close();
+		try {
+			String targetPath1 = "C:\\Users\\anike\\Documents\\mca\\MCA 4 Java Project\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\HOMESTEADERINDIA-Spring-Boot-Java-Project-master\\target\\classes\\static\\certificate";
+			java.io.File targetDir = new java.io.File(targetPath1);
+			if (!targetDir.exists()) {
+				targetDir.mkdirs();
+			}
+			BufferedOutputStream b2 = new BufferedOutputStream(new FileOutputStream(targetPath1 + "/" + f));
+			b2.write(filename.getBytes());
+			b2.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 		c1.setDocument(f);
 
@@ -118,11 +123,12 @@ public class agroController {
 	// Mapping for Cheking Login Details
 	@PostMapping("/agrologin")
 	public String checkAgroLogin(@RequestParam("email") String email, @RequestParam("password") String password,
-			HttpSession h1) {
+			HttpSession h1, ModelMap mm) {
 		agroEntity ae = sa.CheckLoginagro(email, password);
 
 		if (ae == null) {
-			return "redirect:/loginagro";
+			mm.addAttribute("error", "Invalid Email or Password! Please try again.");
+			return "loginagro";
 		}
 
 		else {
